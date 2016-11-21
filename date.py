@@ -1,0 +1,60 @@
+def getWeekDay(date):
+    day = date.weekday()
+    if day==0:
+        return "Monday"
+    elif day==1:
+        return "Tuesday"
+    elif day==2:
+        return "Wednesday"
+    elif day==3:
+        return "Thursday"
+    elif day==4:
+        return "Friday"
+    elif day==5:
+        return "Saturday"
+    elif day==6:
+        return "Sunday"
+        
+def getDay(date):
+    if date.day==1:
+        return "1st"
+    elif date.day==2:
+        return "2nd"
+    elif date.day==3:
+        return "3rd"
+    elif date.day==21:
+        return "21st"
+    elif date.day==22:
+        return "22nd"
+    elif date.day==23:
+        return "23rd"
+    elif date.day==31:
+        return "31st"
+    else:
+        return str(date.day)+"th"
+
+def getMonth(date):
+    if date.month==1:
+        return "Jan"
+    elif date.month==2:
+        return "Feb"
+    elif date.month==3:
+        return "Mar"
+    elif date.month==4:
+        return "Apr"
+    elif date.month==5:
+        return "May"
+    elif date.month==6:
+        return "June"
+    elif date.month==7:
+        return "July"
+    elif date.month==8:
+        return "Aug"
+    elif date.month==9:
+        return "Sept"
+    elif date.month==10:
+        return "Oct"
+    elif date.month==11:
+        return "Nov"
+    elif date.month==12:
+        return "Dec"
